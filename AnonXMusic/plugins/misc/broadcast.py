@@ -1,5 +1,4 @@
 import asyncio
-
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
@@ -119,7 +118,7 @@ async def braodcast_message(client, message, _):
         text = _["broad_6"]
         from AnonXMusic.core.userbot import assistants
 
-        for num in assistants:
+for num in assistants:
             sent = 0
             client = await get_client(num)
             async for dialog in client.get_dialogs():
